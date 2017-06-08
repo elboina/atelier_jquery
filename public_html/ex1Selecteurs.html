@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="JS/jquery-3.2.1.js" type="text/javascript"></script>
+        <link href="CSS/style1.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <div id="d1" class="rouge">TODO write content</div>
+        <div id="d2" class="vert">TODO write content</div>
+        <div id="d3" class="jaune">TODO write content</div>
+        <table>
+            <thead>
+            <th>Exo tableau</th>
+            
+            </thead>
+            <tbody>
+                <tr><td>Première ligne</td></tr>
+                <tr><td>Deuxième ligne</td></tr>
+                <tr><td>Troisième ligne</td></tr>
+                <tr><td>Quatrième ligne</td></tr>
+                <tr><td>Cinquième ligne</td></tr>
+                <tr><td>Sixième ligne</td></tr>
+                <tr><td>Septième ligne</td></tr>
+                <tr><td>Huitième ligne</td></tr>
+                <tr><td>Neuvième ligne</td></tr>
+                <tr><td>Dixième ligne</td></tr>
+            
+            </tbody>
+        </table>
+        <script type="text/javascript">
+            
+            function onClick(e) {
+                
+                $(e.target).toggleClass('ligne_select');
+            }
+            
+            $('tr').click(onClick);
+            
+            $('tr:even').addClass('ligne_paire');
+            $('tr:odd').addClass('ligne_impaire');
+        </script>
+    </body>
+    
+</html>
